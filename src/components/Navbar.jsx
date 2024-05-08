@@ -89,6 +89,12 @@ export const Navbar = () => {
                   <li>
                     <NavLink to="/contact15"> Application Master</NavLink>
                   </li>
+                  <li>
+                    <NavLink to="/contact16"> currency master</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/contact17"> GST Master</NavLink>
+                  </li>
                 </ul>
               )}
             </li>
