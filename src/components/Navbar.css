@@ -36,7 +36,7 @@ ul li:last-child {
     position: absolute;
     top: 100%; /* Position dropdown below its parent */
     left: 0;
-    background-color: #fff; /* Background color of dropdown */
+    background-color: #ffffff; /* Background color of dropdown */
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
     z-index: 1000; /* Ensure dropdown is above other elements */
     padding: 0.5rem 0; /* Add padding inside the dropdown */
