@@ -59,7 +59,7 @@ export const Contact1Component = () => {
         </div>
         <div className="container grid grid-two-cols">
           <div className="contact-img">
-            <img src="/images/support.png" alt="We are always ready to help" />
+            <img src="/images/contact1.svg" alt="We are always ready to help" />
           </div>
           <section className="section-form">
             <form onSubmit={handleSubmit}>

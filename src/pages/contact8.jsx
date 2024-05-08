@@ -168,7 +168,7 @@ export const Contact8Component = () => {
         </div>
         <div className="container grid grid-two-cols">
           <div className="contact-img">
-            <img src="/images/support.png" alt="Description of your image" />
+            <img src="/images/homepage.jpg" alt="Description of your image" />
           </div>
           <section className="section-form">
             <form onSubmit={handleSubmit}>
