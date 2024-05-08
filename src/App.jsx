@@ -16,6 +16,7 @@ import { Contact11Component } from "./pages/contact11";
 import { Contact12Component } from "./pages/contact12";
 import { Contact13Component } from "./pages/contact13";
 import { Contact14Component } from "./pages/contact14"; // Import the Contact14Component
+import { Contact15Component } from "./pages/contact15"; // Import the Contact14Component
 
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
@@ -52,6 +53,8 @@ const App = () => {
           <Route path="/contact12" element={<Contact12Component />} />
           <Route path="/contact13" element={<Contact13Component />} /> {/* Route for Contact13Component */}
           <Route path="/contact14" element={<Contact14Component />} /> {/* Route for Contact14Component */}
+          <Route path="/contact15" element={<Contact15Component />} /> {/* Route for Contact14Component */}
+
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/services" element={<Services />} />

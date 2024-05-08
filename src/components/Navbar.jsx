@@ -86,6 +86,9 @@ export const Navbar = () => {
                   <li>
                     <NavLink to="/contact14"> User Role Combination</NavLink>
                   </li>
+                  <li>
+                    <NavLink to="/contact15"> Application Master</NavLink>
+                  </li>
                 </ul>
               )}
             </li>
