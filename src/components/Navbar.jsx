@@ -95,6 +95,18 @@ export const Navbar = () => {
                   <li>
                     <NavLink to="/contact17"> GST Master</NavLink>
                   </li>
+                  <li>
+                    <NavLink to="/contact18"> Crop Master</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/contact19"> Crop Lot Master</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/contact20"> Soil Master</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/contact21"> Season Master</NavLink>
+                  </li>
                 </ul>
               )}
             </li>

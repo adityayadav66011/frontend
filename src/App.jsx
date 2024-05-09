@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
@@ -18,7 +19,12 @@ import { Contact13Component } from "./pages/contact13";
 import { Contact14Component } from "./pages/contact14";
 import { Contact15Component } from "./pages/contact15";
 import { Contact16Component } from "./pages/contact16";
-import { Contact17Component } from "./pages/contact17"; // Add import for Contact17Component
+import { Contact17Component } from "./pages/contact17";
+import { Contact18Component } from "./pages/contact18";
+import { Contact19Component } from "./pages/contact19"; // Import Contact19Component
+import { Contact20Component } from "./pages/contact20"; // Import Contact19Component
+import { Contact21Component } from "./pages/contact21"; // Import Contact19Component
+
 
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
@@ -57,7 +63,10 @@ const App = () => {
           <Route path="/contact14" element={<Contact14Component />} />
           <Route path="/contact15" element={<Contact15Component />} />
           <Route path="/contact16" element={<Contact16Component />} />
-          <Route path="/contact17" element={<Contact17Component />} /> {/* Add Route for Contact17Component */}
+          <Route path="/contact17" element={<Contact17Component />} />
+          <Route path="/contact18" element={<Contact18Component />} />
+          <Route path="/contact19" element={<Contact19Component />} /> // Route for Contact Form 19
+          <Route path="/contact21" element={<Contact21Component />} /> // Route for Contact Form 19
 
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
