@@ -66,6 +66,7 @@ const App = () => {
           <Route path="/contact17" element={<Contact17Component />} />
           <Route path="/contact18" element={<Contact18Component />} />
           <Route path="/contact19" element={<Contact19Component />} /> // Route for Contact Form 19
+          <Route path="/contact20" element={<Contact20Component />} /> // Route for Contact Form 19
           <Route path="/contact21" element={<Contact21Component />} /> // Route for Contact Form 19
 
           <Route path="/login" element={<Login />} />
