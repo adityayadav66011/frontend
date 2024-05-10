@@ -107,6 +107,15 @@ export const Navbar = () => {
                   <li>
                     <NavLink to="/contact21"> Season Master</NavLink>
                   </li>
+                  <li>
+                    <NavLink to="/contact22"> Material Master</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/contact23"> Payment Term Master</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/contact24"> Customer Master</NavLink>
+                  </li>
                 </ul>
               )}
             </li>

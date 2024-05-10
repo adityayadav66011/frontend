@@ -24,6 +24,8 @@ import { Contact18Component } from "./pages/contact18";
 import { Contact19Component } from "./pages/contact19"; // Import Contact19Component
 import { Contact20Component } from "./pages/contact20"; // Import Contact19Component
 import { Contact21Component } from "./pages/contact21"; // Import Contact19Component
+import { Contact22Component } from "./pages/contact22"; // Import Contact19Component
+import { Contact23Component } from "./pages/contact23"; // Import Contact19Component
 
 
 import { Login } from "./pages/Login";
@@ -68,6 +70,8 @@ const App = () => {
           <Route path="/contact19" element={<Contact19Component />} /> // Route for Contact Form 19
           <Route path="/contact20" element={<Contact20Component />} /> // Route for Contact Form 19
           <Route path="/contact21" element={<Contact21Component />} /> // Route for Contact Form 19
+          <Route path="/contact22" element={<Contact22Component />} /> // Route for Contact Form 19
+          <Route path="/contact23" element={<Contact23Component />} /> // Route for Contact Form 19
 
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
