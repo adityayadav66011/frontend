@@ -33,6 +33,9 @@ export const Navbar = () => {
             <li>
               <NavLink to="/services"> Services </NavLink>
             </li>
+            <li>
+              <NavLink to="/get"> Get Data </NavLink> {/* Added NavLink for Get Data */}
+            </li>
             <li
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
