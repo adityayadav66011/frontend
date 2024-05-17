@@ -41,7 +41,7 @@ export const AllUsersContacts = () => {
                             <th>City Code</th>
                             <th>Visit In Days</th>
                             <th>Last Visited</th>
-                            <th>Actions</th> {/* New column for Actions */}
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
