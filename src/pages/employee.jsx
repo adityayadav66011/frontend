@@ -30,7 +30,7 @@ export const EmployeeForm = () => {
           const data = await response.json();
           setDropdownOptions(data);
         } else {
-          console.error("Failed to fetch dropdown options:", response.statusText);
+          console.error("Failed to fetch options:", response.statusText);
         }
       } catch (error) {
         console.error("Error fetching dropdown options:", error);
