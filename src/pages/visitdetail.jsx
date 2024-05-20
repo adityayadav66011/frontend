@@ -3,9 +3,7 @@ import { formatDate, formatDateTime } from './visitentry';
 
 const VisitDetail = ({ customer, onClose }) => {
   const [formData, setFormData] = useState({
-    Customer_Code: customer.Customer_Code,
     Last_Visited_Date: customer.Last_Visited,
-    Recommended_Date: customer.Recommended_Date,
     Days_Since_Visit_Pending: customer.Days_Since_Visit_Pending,
     Planned_Date: customer.Planned_Date,
     Planned_Time: customer.Planned_Time,
@@ -60,31 +58,19 @@ const VisitDetail = ({ customer, onClose }) => {
   return (
     <div className="modal">
       <div className="modal-content">
-        <h2>Plan Visit for {customer.Customer_Name}</h2>
+        <h2>Visit Detail for {customer.Customer_Name}</h2>
         <form onSubmit={handleSubmit}>
           {/* Existing customer data */}
-          <p>Customer Code: {customer.Customer_Code}</p>
-          <p>City Code: {customer.City_Code}</p>
-          <p>Visit In Days: {customer.Visit_In_Days}</p>
           <p>Last Visited: {formatDate(customer.Last_Visited)}</p>
-          <p>Recommended Date: {formData.Recommended_Date}</p>
-          <p>Days Since Visit Pending: {formData.Days_Since_Visit_Pending}</p>
+          <p>Planned Visit Date: {formData.Planned_Date}</p>
+          <p>Planned Visit Time: {formData.Planned_Time}</p>
           <p>Amount Receivables: {formData.Amount_Receivables}</p>
           <p>Overdue Amount: {formData.Overdue_Amount}</p>
-          <p>Fixed Field: {formData.Fixed_Field}</p>
-          <p>Last Material Recommended: {formData.Last_Material_Recommended}</p>
-          <p>Planned Date: {formData.Planned_Date}</p>
-          <p>Planned Time: {formData.Planned_Time}</p>
+          <p>Crop Recommended in Last Week: {formData.Fixed_Field}</p>
+          <p>Material Recommended in Last Week: {formData.Last_Material_Recommended}</p>
+          <p>Remarks: {formData.Remarks}</p>
           
           {/* New form fields */}
-          <label>
-            Remarks:
-            <textarea
-              name="Remarks"
-              value={formData.Remarks}
-              onChange={handleChange}
-            />
-          </label>
           <label>
             Feedback:
             <textarea

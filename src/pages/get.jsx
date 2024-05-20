@@ -47,7 +47,7 @@ export const AllUsersContacts = () => {
     return (
         <section className="admin-users-section">
             <div className="container">
-                <h1>All Users Contact Data</h1>
+                <h1>Visit Planner</h1>
             </div>
             <div className="container admin-users">
                 <table>

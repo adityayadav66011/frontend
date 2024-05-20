@@ -34,10 +34,10 @@ export const Navbar = () => {
               <NavLink to="/services"> Services </NavLink>
             </li>
             <li>
-              <NavLink to="/get"> Get Data </NavLink>
+              <NavLink to="/get"> Visit Planner </NavLink>
             </li>
             <li>
-              <NavLink to="/visitentry"> visit entry </NavLink>
+              <NavLink to="/visitentry"> Visit Entry </NavLink>
             </li>
             <li
               onMouseEnter={handleMouseEnter}

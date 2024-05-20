@@ -71,7 +71,7 @@ const PlanVisitForm = ({ customer, onClose }) => {
                 <form onSubmit={handleSubmit}>
                     {/* Existing customer data */}
                     <p>Customer Code: {customer.Customer_Code}</p>
-                    <p>City Code: {customer.City_Code}</p>
+                    <p>City Name: {customer.City_Name}</p>
                     <p>Visit In Days: {customer.Visit_In_Days}</p>
                     <p>Last Visited: {new Date(customer.Last_Visited).toLocaleDateString()}</p>
                     <p>Recommended Date: {formData.Recommended_Date}</p>

@@ -115,7 +115,7 @@ export const DataDisplay = () => {
   return (
     <section className="admin-users-section">
       <div className="container">
-        <h1>Data Display</h1>
+        <h1>Visit Entry</h1>
       </div>
       <div className="container admin-users">
         <table>
