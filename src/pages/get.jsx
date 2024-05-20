@@ -8,7 +8,7 @@ export const AllUsersContacts = () => {
 
     const getContactsData = async () => {
         try {
-            const response = await fetch("http://localhost:4000/api/contact24Data/filteredData", {
+            const response = await fetch("https://backend-hj39.onrender.com/api/contact24Data/filteredData", {
                 method: "GET",
             });
             if (response.ok) {
