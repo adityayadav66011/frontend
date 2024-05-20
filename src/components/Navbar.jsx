@@ -34,7 +34,10 @@ export const Navbar = () => {
               <NavLink to="/services"> Services </NavLink>
             </li>
             <li>
-              <NavLink to="/get"> Get Data </NavLink> {/* Added NavLink for Get Data */}
+              <NavLink to="/get"> Get Data </NavLink>
+            </li>
+            <li>
+              <NavLink to="/visitentry"> visit entry </NavLink>
             </li>
             <li
               onMouseEnter={handleMouseEnter}
@@ -67,12 +70,11 @@ export const Navbar = () => {
                   <li>
                     <NavLink to="/contact7"> Company Master </NavLink>
                   </li>
-                  {/* Include Contact form 8 in the dropdown */}
                   <li>
                     <NavLink to="/contact8"> Branch Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact9"> Functional levels Master </NavLink>
+                    <NavLink to="/contact9"> Functional Levels Master </NavLink>
                   </li>
                   <li>
                     <NavLink to="/contact10"> Function Master </NavLink>
@@ -93,7 +95,7 @@ export const Navbar = () => {
                     <NavLink to="/contact15"> Application Master</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact16"> currency master</NavLink>
+                    <NavLink to="/contact16"> Currency Master</NavLink>
                   </li>
                   <li>
                     <NavLink to="/contact17"> GST Master</NavLink>
@@ -120,7 +122,13 @@ export const Navbar = () => {
                     <NavLink to="/contact24"> Customer Master</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/employee"> employee Master</NavLink>
+                    <NavLink to="/employee"> Employee Master</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/mapping"> Crop Soil Season Mapping </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/crop-material-mapping">Crop Material Mapping</NavLink>
                   </li>
                 </ul>
               )}

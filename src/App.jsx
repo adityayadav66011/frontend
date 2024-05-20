@@ -21,18 +21,17 @@ import { Contact15Component } from "./pages/contact15";
 import { Contact16Component } from "./pages/contact16";
 import { Contact17Component } from "./pages/contact17";
 import { Contact18Component } from "./pages/contact18";
-import { Contact19Component } from "./pages/contact19"; // Import Contact19Component
-import { Contact20Component } from "./pages/contact20"; // Import Contact19Component
-import { Contact21Component } from "./pages/contact21"; // Import Contact19Component
-import { Contact22Component } from "./pages/contact22"; // Import Contact19Component
-import { Contact23Component } from "./pages/contact23"; // Import Contact19Component
-import { ContactForm24 } from "./pages/contact24"; // Import Contact19Component
-
-import { EmployeeForm } from "./pages/employee"; // Import Contact19Component
-
-import { AllUsersContacts } from "./pages/get"; // Import Contact19Component
-
-AllUsersContacts
+import { Contact19Component } from "./pages/contact19";
+import { Contact20Component } from "./pages/contact20";
+import { Contact21Component } from "./pages/contact21";
+import { Contact22Component } from "./pages/contact22";
+import { Contact23Component } from "./pages/contact23";
+import { ContactForm24 } from "./pages/contact24";
+import { CropSoilSeasonMappingComponent } from "./pages/cropsoilseason";
+import { CropMaterialMapComponent } from "./pages/cropmaterial";
+import { EmployeeForm } from "./pages/employee";
+import { AllUsersContacts } from "./pages/get";
+import { DataDisplay } from "./pages/visitentry";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { Services } from "./pages/Services";
@@ -72,17 +71,17 @@ const App = () => {
           <Route path="/contact16" element={<Contact16Component />} />
           <Route path="/contact17" element={<Contact17Component />} />
           <Route path="/contact18" element={<Contact18Component />} />
-          <Route path="/contact19" element={<Contact19Component />} /> // Route for Contact Form 19
-          <Route path="/contact20" element={<Contact20Component />} /> // Route for Contact Form 19
-          <Route path="/contact21" element={<Contact21Component />} /> // Route for Contact Form 19
-          <Route path="/contact22" element={<Contact22Component />} /> // Route for Contact Form 19
-          <Route path="/contact23" element={<Contact23Component />} /> // Route for Contact Form 19
-          <Route path="/contact24" element={<ContactForm24 />} /> // Route for Contact Form 19
-
-          <Route path="/get" element={<AllUsersContacts />} /> // Route for Contact Form 19
-          <Route path="/employee" element={<EmployeeForm />} /> // Route for Contact Form 19
-
-
+          <Route path="/contact19" element={<Contact19Component />} />
+          <Route path="/contact20" element={<Contact20Component />} />
+          <Route path="/contact21" element={<Contact21Component />} />
+          <Route path="/contact22" element={<Contact22Component />} />
+          <Route path="/contact23" element={<Contact23Component />} />
+          <Route path="/contact24" element={<ContactForm24 />} />
+          <Route path="/get" element={<AllUsersContacts />} />
+          <Route path="/visitentry" element={<DataDisplay />} />
+          <Route path="/employee" element={<EmployeeForm />} />
+          <Route path="/mapping" element={<CropSoilSeasonMappingComponent />} />
+          <Route path="/crop-material-mapping" element={<CropMaterialMapComponent />} /> 
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/services" element={<Services />} />
