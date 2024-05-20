@@ -73,26 +73,10 @@ const VisitDetail = ({ customer, onClose }) => {
           <p>Overdue Amount: {formData.Overdue_Amount}</p>
           <p>Fixed Field: {formData.Fixed_Field}</p>
           <p>Last Material Recommended: {formData.Last_Material_Recommended}</p>
+          <p>Planned Date: {formData.Planned_Date}</p>
+          <p>Planned Time: {formData.Planned_Time}</p>
           
           {/* New form fields */}
-          <label>
-            Planned Date:
-            <input
-              type="date"
-              name="Planned_Date"
-              value={formData.Planned_Date}
-              onChange={handleChange}
-            />
-          </label>
-          <label>
-            Planned Time:
-            <input
-              type="time"
-              name="Planned_Time"
-              value={formData.Planned_Time}
-              onChange={handleChange}
-            />
-          </label>
           <label>
             Remarks:
             <textarea
