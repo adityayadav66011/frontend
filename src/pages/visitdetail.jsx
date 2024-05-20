@@ -39,7 +39,7 @@ const VisitDetail = ({ customer, onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4000/api/plan-visit", {
+      const response = await fetch("https://backend-hj39.onrender.com/api/plan-visit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
