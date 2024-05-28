@@ -204,7 +204,7 @@ export const EmployeeForm = () => {
                 autoComplete="off"
                 value={formData.employeeNumber}
                 onChange={handleInput}
-                required
+                readonly
               />
             </div>
             <div>

@@ -76,7 +76,6 @@ export const Contact22Component = () => {
                   name="materialCode"
                   id="materialCode"
                   autoComplete="off"
-                  value={previousMaterialCode}
                   readOnly
                 />
               </div>

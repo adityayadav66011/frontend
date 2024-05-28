@@ -79,7 +79,6 @@ export const Contact20Component = () => {
                   name="Soil_Code"
                   id="Soil_Code"
                   autoComplete="off"
-                  value={previousSoilCode}
                   readOnly
                 />
               </div>

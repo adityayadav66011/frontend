@@ -77,7 +77,6 @@ export const Contact21Component = () => {
                   name="Season_Code"
                   id="Season_Code"
                   autoComplete="off"
-                  value={previousSeasonCode}
                   readOnly
                 />
               </div>
