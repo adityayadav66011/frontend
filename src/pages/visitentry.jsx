@@ -26,24 +26,24 @@ export const DataDisplay = () => {
   useEffect(() => {
     const data = [
       {
-        Customer_Name: 'XYZ Enterprises',
+        Customer_Name: 'GGG Agriculture',
         Customer_Code: 'CC0002',
         City_Code: 'CC002',
         Last_Visited: '2024-01-01',
         Visit_In_Days: 30,
-        Planned_Date: '2024-02-31',
-        Planned_Time: '2024-02-31 19:38',
+        Planned_Date: '2024-06-10',
+        Planned_Time: '2024-06-10 19:38',
         Remarks: 'this is a remark'
       },
       {
-        Customer_Name: 'ABC Corp',
+        Customer_Name: 'Rajesh Naik',
         Customer_Code: 'CC0003',
         City_Code: 'CC003',
         Last_Visited: '2024-01-02',
         Visit_In_Days: 45,
-        Planned_Date: '2024-03-16',
-        Planned_Time: '2024-03-16 14:30',
-        Remarks: 'this is a remark for ABC Corp'
+        Planned_Date: '2024-06-15',
+        Planned_Time: '2024-06-15 14:30',
+        Remarks: 'this is a remark for Rajesh Naik'
       },
       {
         Customer_Name: 'DEF Ltd',

@@ -82,9 +82,11 @@ const VisitDetail = ({ customer, onClose }) => {
           <label>
             Season Recommendation:
             <select name="Season_Recommendation" value={formData.Season_Recommendation} onChange={handleChange}>
-              <option value="Red">Red</option>
-              <option value="Black">Black</option>
-              <option value="Arid">Arid</option>
+              <option value="Summer">Summer</option>
+              <option value="Winter">Winter</option>
+              <option value="Monsoon">Monsoon</option>
+              <option value="Spring">Spring</option>
+
             </select>
           </label>
           <fieldset>
@@ -93,21 +95,21 @@ const VisitDetail = ({ customer, onClose }) => {
               <input
                 type="checkbox"
                 name="New_Recommended_Crops"
-                value="Crop1"
-                checked={formData.New_Recommended_Crops.includes('Crop1')}
+                value="Wheat"
+                checked={formData.New_Recommended_Crops.includes('Wheat')}
                 onChange={handleChange}
               />
-              Crop1
+              Wheat
             </label>
             <label>
               <input
                 type="checkbox"
                 name="New_Recommended_Crops"
-                value="Crop2"
-                checked={formData.New_Recommended_Crops.includes('Crop2')}
+                value="Maize"
+                checked={formData.New_Recommended_Crops.includes('Maize')}
                 onChange={handleChange}
               />
-              Crop2
+              Maize
             </label>
           </fieldset>
           <fieldset>
@@ -116,21 +118,21 @@ const VisitDetail = ({ customer, onClose }) => {
               <input
                 type="checkbox"
                 name="New_Recommended_Materials"
-                value="Material1"
-                checked={formData.New_Recommended_Materials.includes('Material1')}
+                value="Vitafax ultra FF"
+                checked={formData.New_Recommended_Materials.includes('Vitafax ultra FF')}
                 onChange={handleChange}
               />
-              Material1
+              Vitafax ultra FF
             </label>
             <label>
               <input
                 type="checkbox"
                 name="New_Recommended_Materials"
-                value="Material2"
-                checked={formData.New_Recommended_Materials.includes('Material2')}
+                value="Areva super"
+                checked={formData.New_Recommended_Materials.includes('Areva super')}
                 onChange={handleChange}
               />
-              Material2
+              Areva super
             </label>
           </fieldset>
           <label>
