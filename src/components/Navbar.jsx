@@ -6,6 +6,7 @@ import { useAuth } from "../store/auth";
 export const Navbar = () => {
   const { isLoggedIn } = useAuth();
   const [showFormsDropdown, setShowFormsDropdown] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleMouseEnter = () => {
     setShowFormsDropdown(true);
@@ -15,29 +16,43 @@ export const Navbar = () => {
     setShowFormsDropdown(false);
   };
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header>
       <div className="container">
         <div className="logo-brand">
-          <NavLink to="/">Saisatwik</NavLink>
+          <NavLink to="/" onClick={closeMobileMenu}>Saisatwik</NavLink>
         </div>
 
-        <nav>
+        <div className="hamburger" onClick={toggleMobileMenu}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <nav className={isMobileMenuOpen ? "active" : ""}>
           <ul>
             <li>
-              <NavLink to="/"> Home </NavLink>
+              <NavLink to="/" onClick={closeMobileMenu}> Home </NavLink>
             </li>
             <li>
-              <NavLink to="/about"> About </NavLink>
+              <NavLink to="/about" onClick={closeMobileMenu}> About </NavLink>
             </li>
             <li>
-              <NavLink to="/services"> Services </NavLink>
+              <NavLink to="/services" onClick={closeMobileMenu}> Services </NavLink>
             </li>
             <li>
-              <NavLink to="/get"> Visit Planner </NavLink>
+              <NavLink to="/get" onClick={closeMobileMenu}> Visit Planner </NavLink>
             </li>
             <li>
-              <NavLink to="/visitentry"> Visit Entry </NavLink>
+              <NavLink to="/visitentry" onClick={closeMobileMenu}> Visit Entry </NavLink>
             </li>
             <li
               onMouseEnter={handleMouseEnter}
@@ -47,106 +62,106 @@ export const Navbar = () => {
               {showFormsDropdown && (
                 <ul className="dropdown vertical">
                   <li>
-                    <NavLink to="/contact"> Contact </NavLink>
+                    <NavLink to="/contact" onClick={closeMobileMenu}> Contact </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact1"> Country Master </NavLink>
+                    <NavLink to="/contact1" onClick={closeMobileMenu}> Country Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact2"> Zone Master </NavLink>
+                    <NavLink to="/contact2" onClick={closeMobileMenu}> Zone Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact3"> State Master </NavLink>
+                    <NavLink to="/contact3" onClick={closeMobileMenu}> State Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact4"> Pool Master </NavLink>
+                    <NavLink to="/contact4" onClick={closeMobileMenu}> Pool Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact5"> Station Master </NavLink>
+                    <NavLink to="/contact5" onClick={closeMobileMenu}> Station Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact6"> City Master </NavLink>
+                    <NavLink to="/contact6" onClick={closeMobileMenu}> City Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact7"> Company Master </NavLink>
+                    <NavLink to="/contact7" onClick={closeMobileMenu}> Company Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact8"> Branch Master </NavLink>
+                    <NavLink to="/contact8" onClick={closeMobileMenu}> Branch Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact9"> Functional Levels Master </NavLink>
+                    <NavLink to="/contact9" onClick={closeMobileMenu}> Functional Levels Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact10"> Function Master </NavLink>
+                    <NavLink to="/contact10" onClick={closeMobileMenu}> Function Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact11"> Industry Master </NavLink>
+                    <NavLink to="/contact11" onClick={closeMobileMenu}> Industry Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact12"> User Master </NavLink>
+                    <NavLink to="/contact12" onClick={closeMobileMenu}> User Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact13"> Role Master </NavLink>
+                    <NavLink to="/contact13" onClick={closeMobileMenu}> Role Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact14"> User Role Combination</NavLink>
+                    <NavLink to="/contact14" onClick={closeMobileMenu}> User Role Combination</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact15"> Application Master</NavLink>
+                    <NavLink to="/contact15" onClick={closeMobileMenu}> Application Master</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact16"> Currency Master</NavLink>
+                    <NavLink to="/contact16" onClick={closeMobileMenu}> Currency Master</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact17"> GST Master</NavLink>
+                    <NavLink to="/contact17" onClick={closeMobileMenu}> GST Master</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact18"> Crop Master</NavLink>
+                    <NavLink to="/contact18" onClick={closeMobileMenu}> Crop Master</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact19"> Crop Lot Master</NavLink>
+                    <NavLink to="/contact19" onClick={closeMobileMenu}> Crop Lot Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact20"> Soil Master</NavLink>
+                    <NavLink to="/contact20" onClick={closeMobileMenu}> Soil Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact21"> Season Master</NavLink>
+                    <NavLink to="/contact21" onClick={closeMobileMenu}> Season Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact22"> Material Master</NavLink>
+                    <NavLink to="/contact22" onClick={closeMobileMenu}> Material Master </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact23"> Payment Term Master</NavLink>
+                    <NavLink to="/contact23" onClick={closeMobileMenu}> Payment Term Master</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact24"> Customer Master</NavLink>
+                    <NavLink to="/contact24" onClick={closeMobileMenu}> Customer Master</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/employee"> Employee Master</NavLink>
+                    <NavLink to="/employee" onClick={closeMobileMenu}> Employee Master</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/mapping"> Crop Soil Season Mapping </NavLink>
+                    <NavLink to="/mapping" onClick={closeMobileMenu}> Crop Soil Season Mapping </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/crop-material-mapping">Crop Material Mapping</NavLink>
+                    <NavLink to="/crop-material-mapping" onClick={closeMobileMenu}>Crop Material Mapping</NavLink>
                   </li>
                 </ul>
               )}
             </li>
             <li>
-              <NavLink to="/admin"> Admin </NavLink>
+              <NavLink to="/admin" onClick={closeMobileMenu}> Admin </NavLink>
             </li>
             {isLoggedIn ? (
               <li>
-                <NavLink to="/logout">Logout</NavLink>
+                <NavLink to="/logout" onClick={closeMobileMenu}>Logout</NavLink>
               </li>
             ) : (
               <>
                 <li>
-                  <NavLink to="/register"> Register </NavLink>
+                  <NavLink to="/register" onClick={closeMobileMenu}> Register </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/login"> Login </NavLink>
+                  <NavLink to="/login" onClick={closeMobileMenu}> Login </NavLink>
                 </li>
               </>
             )}

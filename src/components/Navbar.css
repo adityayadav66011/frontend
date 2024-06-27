@@ -1,4 +1,3 @@
-/* Reset margin and padding */
 body, html {
     margin: 0;
     padding: 0;
@@ -14,7 +13,7 @@ body, html {
 
 ul {
     display: flex;
-    list-style: none; /* Remove default list styles */
+    list-style: none; 
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
 }
@@ -63,4 +62,80 @@ ul li:last-child {
 /* Show the dropdown when hovering over the parent item */
 ul li:hover .dropdown.vertical {
     display: block;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 2.4rem;
+    z-index: 1001; /* Ensure hamburger is above other elements */
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    ul li {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    ul li:hover .dropdown.vertical {
+        display: none; /* Disable dropdown hover effect on mobile */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav.active ul {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    nav.active ul li {
+        font-size: 1.8rem; /* Larger font size */
+        margin: 1rem 0; /* Spacing between items */
+    }
+
+    nav.active .dropdown.vertical {
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+        background-color: transparent; /* Inherit background */
+    }
 }
